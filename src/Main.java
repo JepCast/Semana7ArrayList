@@ -32,14 +32,15 @@ public class Main {
         for (Curso curso: alumno1.getCursos()){
             System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
             total += curso.getCosto();
-            System.out.println("Total a pagar: "+total);
-
         }
+
+        System.out.println("Total a pagar: "+total);
+        GranTotal += total;
         for (Curso curso: alumno2.getCursos()){
             System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
             total += curso.getCosto();
-            System.out.println("Total a pagar: "+total);
         }
+        System.out.println("Total a pagar: "+total);
         for (Curso curso: alumno3.getCursos()){
             System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
             total += curso.getCosto();
