@@ -6,7 +6,7 @@ public class Main {
         Alumno alumno1 = new Alumno("0001","Juan Perez","88737522","5 calle 8-12");
         Curso  cur= new Curso("Programacion","555",500.00);
         alumno1.agregarCurso(cur);
-        alumno1.agregarCurso(new Curso("Derecho","120", 1.0));
+        alumno1.agregarCurso(new Curso("Derecho","120", 400.0));
 
         Alumno alumno2 = new Alumno("0002","Mikel Barehz","88737384","6 calle 3-2");
         Curso cur2= new Curso("Programacion I","557",500.00);
@@ -21,15 +21,29 @@ public class Main {
         alumno3.agregarCurso(cur5);
 
 
-        System.out.println("Nombre del alumno:"+alumno1.getNombre());
-        System.out.println("Carnet:"+alumno1.getCarnet());
-        System.out.println("Nombre del alumno:"+alumno2.getNombre());
-        System.out.println("Carnet:"+alumno2.getCarnet());
-        System.out.println("Nombre del alumno:"+alumno3.getNombre());
-        System.out.println("Carnet:"+alumno3.getCarnet());
+        System.out.println("Nombre del alumno: "+alumno1.getNombre());
+        System.out.println("Carnet: "+alumno1.getCarnet());
+        System.out.println("Nombre del alumno: "+alumno2.getNombre());
+        System.out.println("Carnet: "+alumno2.getCarnet());
+        System.out.println("Nombre del alumno: "+alumno3.getNombre());
+        System.out.println("Carnet: "+alumno3.getCarnet());
 
+        int total = 0;
         for (Curso curso: alumno1.getCursos()){
-            System.out.println("Curso"+curso.getNombre()+"Valor"+curso.getCosto());
+            System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
+            total += curso.getCosto();
+            System.out.println("Total a pagar: "+total);
+
+        }
+        for (Curso curso: alumno2.getCursos()){
+            System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
+            total += curso.getCosto();
+            System.out.println("Total a pagar: "+total);
+        }
+        for (Curso curso: alumno3.getCursos()){
+            System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
+            total += curso.getCosto();
+            System.out.println("Total a pagar: "+total);
         }
     }
 }
