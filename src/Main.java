@@ -8,8 +8,6 @@ public class Main {
         alumno1.agregarCurso(cur);
         alumno1.agregarCurso(new Curso("Derecho","120", 1.0));
 
-
-
         Alumno alumno2 = new Alumno("0002","Mikel Barehz","88737384","6 calle 3-2");
         Curso cur2= new Curso("Programacion I","557",500.00);
         Curso cur3= new Curso("Diseño Grafico I","435",600.00);
