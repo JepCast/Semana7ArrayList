@@ -3,22 +3,22 @@ import Alumnos.Curso;
 
 public class Main {
     public static void main(String[] args){
-        Alumno alumno1 = new Alumno("0902","Juan Perez","88737522","5 calle 8-12");
+        Alumno alumno1 = new Alumno("0001","Juan Perez","88737522","5 calle 8-12");
         Curso  cur= new Curso("Programacion","555",500.00);
         alumno1.agregarCurso(cur);
-        alumno1.agregarCurso(new Curso("Derecho","12", 1.0));
+        alumno1.agregarCurso(new Curso("Derecho","120", 1.0));
 
 
 
-        Alumno alumno2 = new Alumno("0902","Mikel Barehz","88737384","6 calle 3-2");
-        Curso cur2= new Curso("Programacion I","555",500.00);
-        Curso cur3= new Curso("Diseño Grafico I","555",600.00);
+        Alumno alumno2 = new Alumno("0002","Mikel Barehz","88737384","6 calle 3-2");
+        Curso cur2= new Curso("Programacion I","557",500.00);
+        Curso cur3= new Curso("Diseño Grafico I","435",600.00);
         alumno2.agregarCurso(cur2);
         alumno2.agregarCurso(cur3);
 
-        Alumno alumno3 = new Alumno("0902","Hidari Ediza","09215423","8 calle 8-22");
-        Curso cur4= new Curso("Diseño Avanzado","555",800.00);
-        Curso cur5= new Curso("Modelado 3D","555",800.00);
+        Alumno alumno3 = new Alumno("0003","Hidari Ediza","09215423","8 av 8-22");
+        Curso cur4= new Curso("Diseño Avanzado","456",800.00);
+        Curso cur5= new Curso("Modelado 3D","368",800.00);
         alumno3.agregarCurso(cur4);
         alumno3.agregarCurso(cur5);
 
