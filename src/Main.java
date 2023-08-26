@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Nombre del alumno: "+alumno3.getNombre());
         System.out.println("Carnet: "+alumno3.getCarnet());
 
-        int total = 0;
+        Double total = 0.00;
         for (Curso curso: alumno1.getCursos()){
             System.out.println("Curso "+curso.getNombre()+" Valor "+curso.getCosto());
             total += curso.getCosto();
