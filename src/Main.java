@@ -8,8 +8,28 @@ public class Main {
         alumno1.agregarCurso(cur);
         alumno1.agregarCurso(new Curso("Derecho","12", 1.0));
 
+
+
+        Alumno alumno2 = new Alumno("0902","Mikel Barehz","88737384","6 calle 3-2");
+        Curso cur2= new Curso("Programacion I","555",500.00);
+        Curso cur3= new Curso("Diseño Grafico I","555",600.00);
+        alumno2.agregarCurso(cur2);
+        alumno2.agregarCurso(cur3);
+
+        Alumno alumno3 = new Alumno("0902","Hidari Ediza","09215423","8 calle 8-22");
+        Curso cur4= new Curso("Diseño Avanzado","555",800.00);
+        Curso cur5= new Curso("Modelado 3D","555",800.00);
+        alumno3.agregarCurso(cur4);
+        alumno3.agregarCurso(cur5);
+
+
         System.out.println("Nombre del alumno:"+alumno1.getNombre());
         System.out.println("Carnet:"+alumno1.getCarnet());
+        System.out.println("Nombre del alumno:"+alumno2.getNombre());
+        System.out.println("Carnet:"+alumno2.getCarnet());
+        System.out.println("Nombre del alumno:"+alumno3.getNombre());
+        System.out.println("Carnet:"+alumno3.getCarnet());
+
         for (Curso curso: alumno1.getCursos()){
             System.out.println("Curso"+curso.getNombre()+"Valor"+curso.getCosto());
         }
